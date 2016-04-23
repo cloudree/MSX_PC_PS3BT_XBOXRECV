@@ -1,14 +1,12 @@
-# MSX_PC_PS3BT_XBOXRECV
-# by cloudree@naver.com
+# MSX_PC_PS3BT_XBOXRECV : PC Game Controller for MSX (with Arduino USB Host)
+by cloudree@naver.com
 
-PC Game Controller for MSX (with Arduino USB Host)
-
-HW :
+# HW :
 Arduino Uno
 Arduino USB Host Shield 
 MSX Joystick Cable
 
-Pin Out:
+# Pin Out:
 MSX        Arduino
 1 Up ----- D2
 2 Down --- D3
@@ -20,12 +18,8 @@ MSX        Arduino
 8 Out
 9 GND ---- GND
 
-PS 3 Controller + BlueTooth Support : 
-#define SUPPORT_PS3
-//#define SUPPORT_XBOX
-//#define SUPPORT_PC
+#PS 3 Controller + BlueTooth Support : 
+define SUPPORT_PS3 and remove the defines SUPPORT_XBOX and SUPPORT_PC
 
-XBox 360 Controller + Wireless Receiver Support : 
-//#define SUPPORT_PS3
-#define SUPPORT_XBOX
-//#define SUPPORT_PC
+#XBox 360 Controller + Wireless Receiver Support : 
+define SUPPORT_PS3 and remove the defines SUPPORT_XBOX and SUPPORT_PC
